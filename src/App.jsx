@@ -1,12 +1,14 @@
 import './App.css'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
+import Newsletter from './components/Newsletter/Newsletter'
 
 function App() {
 
   return (
     <>
       <Header></Header>
+      <Newsletter></Newsletter>
       <Footer></Footer>
     </>
   )

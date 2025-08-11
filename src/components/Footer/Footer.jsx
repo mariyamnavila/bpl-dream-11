@@ -24,7 +24,7 @@ const Footer = () => {
                         <h6 className="text-white text-xl">Subscribe</h6>
                         <p>Subscribe to our newsletter for the latest updates.</p>
                     <div className="relative inline-block mt-5 ">
-                            <input className="rounded-l-xl py-3 px-7" type="text" placeholder="Enter your email" />
+                            <input className="rounded-l-xl py-3 px-7 w-[200px] md:w-auto" type="text" placeholder="Enter your email" />
                             <button className="font-semibold py-3 px-7 text-black bg-gradient-to-l from-pink-300 to-orange-300 rounded-r-xl">Subscribe</button>
                             {/* bg-linear-to-bl from-[#fbdaa8] to-[#fa889b] */}
                     </div>
