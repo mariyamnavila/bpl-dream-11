@@ -1,27 +1,31 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import Player from "../Player/Player";
+import AvailablePlayers from "../Players copy/AvailablePlayers";
+import SelectedPlayers from "../SelectedPlayers/SelectedPlayers";
 
-const Players = () => {
-    const [players, setPlayers] = useState([]);
-    useEffect(() => {
-        fetch('cricket.json')
-            .then(res => res.json())
-            .then(data => setPlayers(data))
-    }, [])
+const Players = ({ AddPlayerToSelected, selectedPlayers, isHidden, setIsHidden }) => {
     return (
         <div className="max-w-7xl mx-auto">
             <div className=" flex justify-between items-center">
                 <p className="text-2xl font-semibold ">Available Players </p>
                 <div>
-                    <button className="border border-gray-300 py-4 px-8 rounded-l-xl">Available</button>
-                    <button className="border border-gray-300 py-4 px-8 rounded-r-xl" >Selected ( <span>0</span> )</button>
+                    <button
+                        onClick={() => setIsHidden(true)}
+                        className={`border border-gray-300 py-4 px-8 rounded-l-xl ${isHidden ? 'bg-yellow-300' : 'bg-white'}`}
+                    >
+                        Available
+                    </button>
+                    <button
+                        onClick={() => setIsHidden(false)}
+                        className={`border border-gray-300 py-4 px-8 rounded-r-xl ${!isHidden ? 'bg-yellow-300' : 'bg-white'}`}
+                    >
+                        Selected  (<span>{selectedPlayers.length}</span> )
+                    </button>
                 </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-                {
-                    players.map((player, idx) => <Player key={idx} player={player}></Player>)
-                }
-            </div>
+            {
+                isHidden ? <AvailablePlayers AddPlayerToSelected={AddPlayerToSelected} /> : <SelectedPlayers selectedPlayers={selectedPlayers} />
+            }
         </div>
     );
 };

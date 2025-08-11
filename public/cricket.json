@@ -1,110 +1,122 @@
 [
-  {
-    "name": "Arjun Mehta",
-    "country": "India",
-    "image": "https://i.postimg.cc/bwhzFZMS/cricket-equipment-digital-art.jpg",
-    "role": "Batsman",
-    "batting_type": "Right-hand bat",
-    "bowling_type": "Right-arm offbreak",
-    "bidding_price": 32000000
-  },
-  {
-    "name": "James Anderson",
-    "country": "England",
-    "image": "https://i.postimg.cc/4ys5SbzF/cricket-equipment-digital-art-1.jpg",
-    "role": "Bowler",
-    "batting_type": "Left-hand bat",
-    "bowling_type": "Right-arm fast-medium",
-    "bidding_price": 15000000
-  },
-  {
-    "name": "Marcus Tan",
-    "country": "Australia",
-    "image": "https://i.postimg.cc/9MK2P0ZM/view-cricket-game-field.jpg",
-    "role": "All-rounder",
-    "batting_type": "Right-hand bat",
-    "bowling_type": "Right-arm medium",
-    "bidding_price": 8000000
-  },
-  {
-    "name": "Sikandar Malik",
-    "country": "Pakistan",
-    "image": "https://i.postimg.cc/0NtPQcN7/cricket-match-with-player.jpg",
-    "role": "Batsman",
-    "batting_type": "Left-hand bat",
-    "bowling_type": "Right-arm legbreak",
-    "bidding_price": 120000000
-  },
-  {
-    "name": "Liam Carter",
-    "country": "New Zealand",
-    "image": "https://i.postimg.cc/QMNjhRjX/cricket-match-with-player-1.jpg",
-    "role": "Wicketkeeper",
-    "batting_type": "Right-hand bat",
-    "bowling_type": "N/A",
-    "bidding_price": 11000000
-  },
-  {
-    "name": "Dinesh Perera",
-    "country": "Sri Lanka",
-    "image": "https://i.postimg.cc/dVjqMqPH/cricket-match-with-player-2.jpg",
-    "role": "Bowler",
-    "batting_type": "Right-hand bat",
-    "bowling_type": "Left-arm orthodox",
-    "bidding_price": 6000000
-  },
-  {
-    "name": "Mohammed Rashid",
-    "country": "Bangladesh",
-    "image": "https://i.postimg.cc/28CccmG8/cricket-match-with-player-3.jpg",
-    "role": "All-rounder",
-    "batting_type": "Left-hand bat",
-    "bowling_type": "Right-arm offbreak",
-    "bidding_price": 7500000
-  },
-  {
-    "name": "Daniel Harper",
-    "country": "South Africa",
-    "image": "https://i.postimg.cc/RVGP28p1/cricket-match-with-player-4.jpg",
-    "role": "Batsman",
-    "batting_type": "Right-hand bat",
-    "bowling_type": "Right-arm medium-fast",
-    "bidding_price": 35000000
-  },
-  {
-    "name": "Ethan Brown",
-    "country": "West Indies",
-    "image": "https://i.postimg.cc/D0vrgfT9/cricketer-field-action.jpg",
-    "role": "Bowler",
-    "batting_type": "Right-hand bat",
-    "bowling_type": "Left-arm fast",
-    "bidding_price": 9500000
-  },
-  {
-    "name": "Chris Johnson",
-    "country": "USA",
-    "image": "https://i.postimg.cc/NM1DDPrH/portrait-person-playing-cricket-sport.jpg",
-    "role": "All-rounder",
-    "batting_type": "Right-hand bat",
-    "bowling_type": "Right-arm medium",
-    "bidding_price": 5000000
-  },
-  {
-    "name": "Ahmed Farooq",
-    "country": "UAE",
-    "image": "https://i.postimg.cc/nrmJ3xG1/portrait-person-playing-cricket-sport-1.jpg",
-    "role": "Batsman",
-    "batting_type": "Left-hand bat",
-    "bowling_type": "Right-arm offbreak",
-    "bidding_price": 20000000
-  },
-  {
-    "name": "Tom Bennett",
-    "country": "Scotland",
-    "image": "https://i.postimg.cc/QtHsW1Bw/portrait-person-playing-cricket-sport-2.jpg",
-    "role": "Wicketkeeper",
-    "batting_type": "Right-hand bat",
-    "bowling_type": "N/A",
-    "bidding_price": 7500000
-  }
+    {
+        "id": 1,
+        "name": "Arjun Mehta",
+        "country": "India",
+        "image": "https://i.postimg.cc/bwhzFZMS/cricket-equipment-digital-art.jpg",
+        "role": "Batsman",
+        "batting_type": "Right-hand bat",
+        "bowling_type": "Right-arm offbreak",
+        "bidding_price": 32000000
+    },
+    {
+        "id": 2,
+        "name": "James Anderson",
+        "country": "England",
+        "image": "https://i.postimg.cc/4ys5SbzF/cricket-equipment-digital-art-1.jpg",
+        "role": "Bowler",
+        "batting_type": "Left-hand bat",
+        "bowling_type": "Right-arm fast-medium",
+        "bidding_price": 15000000
+    },
+    {
+        "id": 3,
+        "name": "Marcus Tan",
+        "country": "Australia",
+        "image": "https://i.postimg.cc/9MK2P0ZM/view-cricket-game-field.jpg",
+        "role": "All-rounder",
+        "batting_type": "Right-hand bat",
+        "bowling_type": "Right-arm medium",
+        "bidding_price": 8000000
+    },
+    {
+        "id": 4,
+        "name": "Sikandar Malik",
+        "country": "Pakistan",
+        "image": "https://i.postimg.cc/0NtPQcN7/cricket-match-with-player.jpg",
+        "role": "Batsman",
+        "batting_type": "Left-hand bat",
+        "bowling_type": "Right-arm legbreak",
+        "bidding_price": 120000000
+    },
+    {
+        "id": 5,
+        "name": "Liam Carter",
+        "country": "New Zealand",
+        "image": "https://i.postimg.cc/QMNjhRjX/cricket-match-with-player-1.jpg",
+        "role": "Wicketkeeper",
+        "batting_type": "Right-hand bat",
+        "bowling_type": "N/A",
+        "bidding_price": 11000000
+    },
+    {
+        "id": 6,
+        "name": "Dinesh Perera",
+        "country": "Sri Lanka",
+        "image": "https://i.postimg.cc/dVjqMqPH/cricket-match-with-player-2.jpg",
+        "role": "Bowler",
+        "batting_type": "Right-hand bat",
+        "bowling_type": "Left-arm orthodox",
+        "bidding_price": 6000000
+    },
+    {
+        "id": 7,
+        "name": "Mohammed Rashid",
+        "country": "Bangladesh",
+        "image": "https://i.postimg.cc/28CccmG8/cricket-match-with-player-3.jpg",
+        "role": "All-rounder",
+        "batting_type": "Left-hand bat",
+        "bowling_type": "Right-arm offbreak",
+        "bidding_price": 7500000
+    },
+    {
+        "id": 8,
+        "name": "Daniel Harper",
+        "country": "South Africa",
+        "image": "https://i.postimg.cc/RVGP28p1/cricket-match-with-player-4.jpg",
+        "role": "Batsman",
+        "batting_type": "Right-hand bat",
+        "bowling_type": "Right-arm medium-fast",
+        "bidding_price": 35000000
+    },
+    {
+        "id": 9,
+        "name": "Ethan Brown",
+        "country": "West Indies",
+        "image": "https://i.postimg.cc/D0vrgfT9/cricketer-field-action.jpg",
+        "role": "Bowler",
+        "batting_type": "Right-hand bat",
+        "bowling_type": "Left-arm fast",
+        "bidding_price": 9500000
+    },
+    {
+        "id": 10,
+        "name": "Chris Johnson",
+        "country": "USA",
+        "image": "https://i.postimg.cc/NM1DDPrH/portrait-person-playing-cricket-sport.jpg",
+        "role": "All-rounder",
+        "batting_type": "Right-hand bat",
+        "bowling_type": "Right-arm medium",
+        "bidding_price": 5000000
+    },
+    {
+        "id": 11,
+        "name": "Ahmed Farooq",
+        "country": "UAE",
+        "image": "https://i.postimg.cc/nrmJ3xG1/portrait-person-playing-cricket-sport-1.jpg",
+        "role": "Batsman",
+        "batting_type": "Left-hand bat",
+        "bowling_type": "Right-arm offbreak",
+        "bidding_price": 20000000
+    },
+    {
+        "id": 12,
+        "name": "Tom Bennett",
+        "country": "Scotland",
+        "image": "https://i.postimg.cc/QtHsW1Bw/portrait-person-playing-cricket-sport-2.jpg",
+        "role": "Wicketkeeper",
+        "batting_type": "Right-hand bat",
+        "bowling_type": "N/A",
+        "bidding_price": 7500000
+    }
 ]
