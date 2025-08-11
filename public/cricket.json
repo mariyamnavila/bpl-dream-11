@@ -1,0 +1,110 @@
+[
+    {
+        "name": "Arjun Mehta",
+        "country": "India",
+        "image": "https://www.123rf.com/photo_10237491_portrait-of-a-cricket-batsman-wearing-a-cricket-helmet.html",
+        "role": "Batsman",
+        "batting_type": "Right-hand bat",
+        "bowling_type": "Right-arm offbreak",
+        "bidding_price": 32000000
+    },
+    {
+        "name": "James Anderson",
+        "country": "England",
+        "image": "https://www.123rf.com/photo_10169005_portrait-of-a-cricket-batsman-standing-with-a-bat-and-a-helmet.html",
+        "role": "Bowler",
+        "batting_type": "Left-hand bat",
+        "bowling_type": "Right-arm fast-medium",
+        "bidding_price": 15000000
+    },
+    {
+        "name": "Marcus Tan",
+        "country": "Australia",
+        "image": "https://www.123rf.com/photo_10167141_portrait-of-a-cricket-player-holding-a-ball-and-bat.html",
+        "role": "All-rounder",
+        "batting_type": "Right-hand bat",
+        "bowling_type": "Right-arm medium",
+        "bidding_price": 8000000
+    },
+    {
+        "name": "Sikandar Malik",
+        "country": "Pakistan",
+        "image": "https://www.rawpixel.com/image/16071042/png-cricket-player-playing-the-game-sports-ball-performance",
+        "role": "Batsman",
+        "batting_type": "Left-hand bat",
+        "bowling_type": "Right-arm legbreak",
+        "bidding_price": 120000000
+    },
+    {
+        "name": "Liam Carter",
+        "country": "New Zealand",
+        "image": "https://www.123rf.com/photo_5840817_portrait-of-a-cricket-player-studio-shot-on-a-white-background.html",
+        "role": "Wicketkeeper",
+        "batting_type": "Right-hand bat",
+        "bowling_type": "N/A",
+        "bidding_price": 11000000
+    },
+    {
+        "name": "Dinesh Perera",
+        "country": "Sri Lanka",
+        "image": "https://www.rawpixel.com/image/16727840/png-cricket-sports-player-action",
+        "role": "Bowler",
+        "batting_type": "Right-hand bat",
+        "bowling_type": "Left-arm orthodox",
+        "bidding_price": 6000000
+    },
+    {
+        "name": "Mohammed Rashid",
+        "country": "Bangladesh",
+        "image": "https://www.123rf.com/photo_28807866_portrait-of-a-batsman-with-holding-a-cricket-bat-and-smiling.html",
+        "role": "All-rounder",
+        "batting_type": "Left-hand bat",
+        "bowling_type": "Right-arm offbreak",
+        "bidding_price": 7500000
+    },
+    {
+        "name": "Daniel Harper",
+        "country": "South Africa",
+        "image": "https://www.123rf.com/photo_36099937_cricket-player-batsman-in-silhouette-shadow-on-white-background.html",
+        "role": "Batsman",
+        "batting_type": "Right-hand bat",
+        "bowling_type": "Right-arm medium-fast",
+        "bidding_price": 35000000
+    },
+    {
+        "name": "Ethan Brown",
+        "country": "West Indies",
+        "image": "https://www.123rf.com/photo_18896585_male-cricket-player.html",
+        "role": "Bowler",
+        "batting_type": "Right-hand bat",
+        "bowling_type": "Left-arm fast",
+        "bidding_price": 9500000
+    },
+    {
+        "name": "Chris Johnson",
+        "country": "USA",
+        "image": "https://www.123rf.com/photo_10236345_portrait-of-a-cricket-batsman-holding-a-cricket-bat.html",
+        "role": "All-rounder",
+        "batting_type": "Right-hand bat",
+        "bowling_type": "Right-arm medium",
+        "bidding_price": 5000000
+    },
+    {
+        "name": "Ahmed Farooq",
+        "country": "UAE",
+        "image": "https://www.123rf.com/photo_10167141_portrait-of-a-cricket-player-holding-a-ball-and-bat.html",
+        "role": "Batsman",
+        "batting_type": "Left-hand bat",
+        "bowling_type": "Right-arm offbreak",
+        "bidding_price": 20000000
+    },
+    {
+        "name": "Tom Bennett",
+        "country": "Scotland",
+        "image": "https://www.rawpixel.com/image/16069896/png-cricket-player-playing-shot-sports-helmet-performance",
+        "role": "Wicketkeeper",
+        "batting_type": "Right-hand bat",
+        "bowling_type": "N/A",
+        "bidding_price": 7500000
+    }
+]
