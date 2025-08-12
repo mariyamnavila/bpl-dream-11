@@ -11,19 +11,68 @@ import { useState } from 'react'
 function App() {
   const [selectedPlayers, setSelectedPlayers] = useState([]);
   const [isHidden, setIsHidden] = useState(true)
+  const [coins, setCoins] = useState(0)
+  const AddCoins = () => {
+    const newCoins = coins + 60000000
+    setCoins(newCoins);
+  }
+  const stopDuplicate = (selected, coin, bidding_price) => {
 
-  const AddPlayerToSelected = (player) => {
-    const newSelectedPlayers = [...selectedPlayers, player];
-    setSelectedPlayers(newSelectedPlayers)
+    const isExists = selectedPlayers.find((player) => player.id === selected.id)
+    // console.log(isExists);
+    if (coin < bidding_price) {
+      toast.error('Not enough money to buy this player.Claim some Credit', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      })
+    }
+    else if (!isExists) {
+      setSelectedPlayers([...selectedPlayers, selected])
+      toast.success(`Congrats!! ${selected.name} is now in your squad`, {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      })
+      const remainingCoins = coins - (selected.bidding_price)
+      setCoins(remainingCoins)
+    }
+    else {
+      toast.error('Player already selected', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      })
+    }
   }
 
   return (
     <>
-      <Header toast={toast}></Header>
+      <Header
+        AddCoins={AddCoins}
+        coins={coins}
+        toast={toast}
+      ></Header>
       <Players
-        AddPlayerToSelected={AddPlayerToSelected}
         isHidden={isHidden} setIsHidden={setIsHidden}
         selectedPlayers={selectedPlayers}
+        stopDuplicate={stopDuplicate}
+        coins={coins}
       ></Players>
       <Newsletter></Newsletter>
       <Footer></Footer>

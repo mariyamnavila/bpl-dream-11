@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Player from "../Player/Player";
 
-const AvailablePlayers = ({ AddPlayerToSelected }) => {
+const AvailablePlayers = ({ stopDuplicate, zeroCoinAlert, coins }) => {
     const [players, setPlayers] = useState([]);
     useEffect(() => {
         fetch('cricket.json')
@@ -9,14 +9,23 @@ const AvailablePlayers = ({ AddPlayerToSelected }) => {
             .then(data => setPlayers(data))
     }, [])
 
-    console.log(players);
-    
+    // console.log(players);
+
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-            {
-                players.map((player, idx) => <Player AddPlayerToSelected={AddPlayerToSelected} key={idx} player={player} ></Player>)
-            }
+        <div>
+            <p className="text-2xl font-semibold ">Available Players </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                {
+                    players.map((player, idx) => <Player
+                        key={idx}
+                        player={player}
+                        stopDuplicate={stopDuplicate}
+                        zeroCoinAlert={zeroCoinAlert}
+                        coins={coins}
+                    ></Player>)
+                }
+            </div>
         </div>
     );
 };

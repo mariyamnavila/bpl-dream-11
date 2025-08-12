@@ -1,11 +1,6 @@
-import { useState } from "react";
 
-const Header = ({ toast }) => {
-    const [coins, setCoins] = useState(0)
-    const AddCoins = () => {
-        const newCoins = coins + 60000000
-        setCoins(newCoins);
-    }
+const Header = ({ toast, AddCoins,coins }) => {
+    
     return (
         <div className="max-w-7xl mx-auto ">
             <nav className="flex justify-between items-center sticky top-0 z-50 backdrop-blur-md bg-white/60 pb-6 pt-9 ">
@@ -28,7 +23,8 @@ const Header = ({ toast }) => {
                 <h3 className="text-4xl font-semibold text-white">Assemble Your Ultimate Dream 11 Cricket Team</h3>
                 <h6 className="text-gray-400 font-medium text-2xl">Beyond Boundaries Beyond Limits</h6>
                 <button onClick={() => {
-                    AddCoins(); toast.success('Credit Added to your Account', {
+                    AddCoins(); 
+                    toast.success('Credit Added to your Account', {
                         position: "top-center",
                         autoClose: 5000,
                         hideProgressBar: false,
