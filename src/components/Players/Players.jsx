@@ -3,9 +3,9 @@ import Player from "../Player/Player";
 import AvailablePlayers from "../Players copy/AvailablePlayers";
 import SelectedPlayers from "../SelectedPlayers/SelectedPlayers";
 
-const Players = ({ selectedPlayers, isHidden, setIsHidden, stopDuplicate, zeroCoinAlert, coins }) => {
+const Players = ({ selectedPlayers, isHidden, setIsHidden, stopDuplicate, zeroCoinAlert, coins,removePlayer }) => {
     return (
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto px-4">
             <div className=" flex justify-end items-center">
                 <div>
                     <button
@@ -32,6 +32,7 @@ const Players = ({ selectedPlayers, isHidden, setIsHidden, stopDuplicate, zeroCo
                     : <SelectedPlayers 
                     setIsHidden={setIsHidden}
                     selectedPlayers={selectedPlayers}
+                    removePlayer={removePlayer}
                     />
             }
         </div>

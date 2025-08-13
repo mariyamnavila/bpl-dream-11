@@ -1,6 +1,6 @@
 import { MdDeleteOutline } from "react-icons/md";
 
-const Selected = ({selectedPlayer}) => {
+const Selected = ({selectedPlayer,removePlayer}) => {
     // console.log(selectedPlayer);
     
     const {name,image,role,bidding_price} = selectedPlayer;
@@ -14,7 +14,9 @@ const Selected = ({selectedPlayer}) => {
                     <p className="text-gray-500">Price: ${bidding_price}</p>
                 </div>
             </div>
+            <button onClick={()=>removePlayer(selectedPlayer)}>
             <MdDeleteOutline  className="text-red-400 text-2xl"/>
+            </button>
         </div>
     );
 };

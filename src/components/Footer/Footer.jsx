@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="pb-16 border-b border-gray-400 flex flex-col md:flex-row justify-between space-y-4 ml-5 md:ml-0">
                     <div className="space-y-3">
                         <h6 className="text-white text-xl" >About Us</h6>
-                        <p className="w-[290px]">We are a passionate team dedicated to providing the best services to our customers.</p>
+                        <p className="w-[290px] md:w-[200px] lg:w-[290px]">We are a passionate team dedicated to providing the best services to our customers.</p>
                     </div>
                     <div className="space-y-3">
                         <h6 className="text-white text-xl">Quick Links</h6>

@@ -2,7 +2,7 @@
 const Header = ({ toast, AddCoins,coins }) => {
     
     return (
-        <div className="max-w-7xl mx-auto ">
+        <div className="max-w-7xl mx-auto px-4">
             <nav className="flex justify-between items-center sticky top-0 z-50 backdrop-blur-md bg-white/60 pb-6 pt-9 ">
                 <img className="w-16" src="/src/assets/logo.png" alt="" />
                 <div className="text-gray-600 space-x-12 flex items-center">

@@ -4,7 +4,6 @@ import Header from './components/Header/Header'
 import Newsletter from './components/Newsletter/Newsletter'
 import Players from './components/Players/Players'
 import { toast } from 'react-toastify';
-// import Selecteds from './components/SelectedPlayers/SelectedPlayers'
 import { useState } from 'react'
 
 
@@ -33,19 +32,33 @@ function App() {
       })
     }
     else if (!isExists) {
-      setSelectedPlayers([...selectedPlayers, selected])
-      toast.success(`Congrats!! ${selected.name} is now in your squad`, {
-        position: "top-center",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: false,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-      })
-      const remainingCoins = coins - (selected.bidding_price)
-      setCoins(remainingCoins)
+      if (selectedPlayers.length > 5) {
+        toast.error('Your squad is full', {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        })
+      }
+      else {
+        setSelectedPlayers([...selectedPlayers, selected])
+        toast.success(`Congrats!! ${selected.name} is now in your squad`, {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        })
+        const remainingCoins = coins - (selected.bidding_price)
+        setCoins(remainingCoins)
+      }
     }
     else {
       toast.error('Player already selected', {
@@ -61,6 +74,11 @@ function App() {
     }
   }
 
+  const removePlayer = (player) =>{
+    const afterRemoved = selectedPlayers.filter(selectedPlayer=> selectedPlayer !== player);
+    setSelectedPlayers(afterRemoved)
+  }
+
   return (
     <>
       <Header
@@ -73,6 +91,7 @@ function App() {
         selectedPlayers={selectedPlayers}
         stopDuplicate={stopDuplicate}
         coins={coins}
+        removePlayer={removePlayer}
       ></Players>
       <Newsletter></Newsletter>
       <Footer></Footer>
