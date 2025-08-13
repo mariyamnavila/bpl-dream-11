@@ -1,10 +1,10 @@
 
-const Footer = () => {
+const Footer = ({footer}) => {
     return (
         <div className="bg-black pt-60">
             <div className="max-w-7xl mx-auto text-gray-400">
                 <div>
-                    <img className="mx-auto mb-16" src="/src/assets/logo-footer.png" alt="" />
+                    <img className="mx-auto mb-16" src={footer} alt="" />
                 </div>
                 <div className="pb-16 border-b border-gray-400 flex flex-col md:flex-row justify-between space-y-4 ml-5 md:ml-0">
                     <div className="space-y-3">

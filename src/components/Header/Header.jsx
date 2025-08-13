@@ -1,10 +1,10 @@
 
-const Header = ({ toast, AddCoins,coins }) => {
-    
+const Header = ({ toast, AddCoins, coins, logo, banner, coinImg }) => {
+
     return (
         <div className="max-w-7xl mx-auto px-4">
             <nav className="flex justify-between items-center sticky top-0 z-50 backdrop-blur-md bg-white/60 pb-6 pt-9 ">
-                <img className="w-16" src="/src/assets/logo.png" alt="" />
+                <img className="w-16" src={logo} alt="" />
                 <div className="text-gray-600 space-x-12 flex items-center">
                     <div className="hidden md:flex space-x-12 ">
                         <p>Home</p>
@@ -14,16 +14,16 @@ const Header = ({ toast, AddCoins,coins }) => {
                     </div>
                     <div className="flex py-4 px-5 border border-[#1313131A] rounded-xl">
                         <p className="text-black font-medium"> {coins} Coin</p>
-                        <img className="w-5 ml-2" src="/src/assets/coin.png" alt="" />
+                        <img className="w-5 ml-2" src={coinImg} alt="" />
                     </div>
                 </div>
             </nav>
-            <div className="bg-[url(./src/assets/bg-shadow.png)] bg-black rounded-3xl py-16 text-center space-y-6 mb-20">
-                <img className="mx-auto" src="/src/assets/banner-main.png" alt="" />
+            <div className="bg-[url('/src/assets/bg-shadow.png')] bg-black rounded-3xl py-16 text-center space-y-6 mb-20">
+                <img className="mx-auto" src={banner} alt="" />
                 <h3 className="text-4xl font-semibold text-white">Assemble Your Ultimate Dream 11 Cricket Team</h3>
                 <h6 className="text-gray-400 font-medium text-2xl">Beyond Boundaries Beyond Limits</h6>
                 <button onClick={() => {
-                    AddCoins(); 
+                    AddCoins();
                     toast.success('Credit Added to your Account', {
                         position: "top-center",
                         autoClose: 5000,

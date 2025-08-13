@@ -1,10 +1,14 @@
-import './App.css'
-import Footer from './components/Footer/Footer'
-import Header from './components/Header/Header'
-import Newsletter from './components/Newsletter/Newsletter'
-import Players from './components/Players/Players'
+import './App.css';
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import Newsletter from './components/Newsletter/Newsletter';
+import Players from './components/Players/Players';
 import { toast } from 'react-toastify';
-import { useState } from 'react'
+import { useState } from 'react';
+import logo from './assets/logo.png';
+import banner from './assets/banner-main.png'
+import footer from './assets/logo-footer.png';
+import coinImg from './assets/coin.png';
 
 
 function App() {
@@ -85,6 +89,9 @@ function App() {
         AddCoins={AddCoins}
         coins={coins}
         toast={toast}
+        logo={logo}
+        banner={banner}
+        coinImg={coinImg}
       ></Header>
       <Players
         isHidden={isHidden} setIsHidden={setIsHidden}
@@ -94,7 +101,9 @@ function App() {
         removePlayer={removePlayer}
       ></Players>
       <Newsletter></Newsletter>
-      <Footer></Footer>
+      <Footer
+      footer={footer}
+      ></Footer>
     </>
   )
 }
